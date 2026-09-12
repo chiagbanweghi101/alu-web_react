@@ -1,0 +1,24 @@
+.menuItem {
+  text-align: right;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.Notifications {
+  border: 2px dashed #e11d3f;
+  padding: 1rem;
+  position: absolute;
+  right: 1rem;
+  top: 2.5rem;
+  width: 30%;
+  background: white;
+  z-index: 1;
+}
+
+.Notifications [data-notification-type='default'] {
+  color: blue;
+}
+
+.Notifications [data-notification-type='urgent'] {
+  color: red;
+}
