@@ -1,0 +1,7 @@
+.Notifications [data-notification-type='default'] {
+  color: blue;
+}
+
+.Notifications [data-notification-type='urgent'] {
+  color: red;
+}

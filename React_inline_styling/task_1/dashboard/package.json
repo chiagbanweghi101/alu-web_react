@@ -1,0 +1,52 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "Holberton Dashboard",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --config config/webpack.config.js",
+    "build": "webpack --mode production --config config/webpack.config.js",
+    "test": "jest",
+    "test-watch": "jest --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aphrodite": "^2.4.0",
+    "prop-types": "^15.8.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@babel/preset-react": "^7.23.3",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.8.0",
+    "babel-jest": "^27.5.1",
+    "babel-loader": "^8.3.0",
+    "cheerio": "1.0.0-rc.3",
+    "css-loader": "^6.10.0",
+    "enzyme": "^3.11.0",
+    "file-loader": "^6.2.0",
+    "image-webpack-loader": "^8.1.0",
+    "jest": "^27.5.1",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.90.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "overrides": {
+    "cheerio": "1.0.0-rc.3"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/config/setupTests.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js",
+      "\\.(jpg|jpeg|png|gif)$": "<rootDir>/__mocks__/fileMock.js"
+    },
+    "testEnvironment": "jsdom"
+  }
+}
